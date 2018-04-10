@@ -1,4 +1,4 @@
-{% set out_dir = pillar.get('out_dir','/tmp/outputData/') %}
+{% set out_dir = pillar.get('out_dir','/tmp/outputdata/') %}
 
 check_or_create_out_dir:
   file.directory:
