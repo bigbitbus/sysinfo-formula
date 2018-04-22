@@ -1,0 +1,9 @@
+sysinfo:
+  lookup:
+    out_dir: /tmp/outdata
+  files:
+    - /proc/cpuinfo
+    - /proc/meminfo
+
+    
+    

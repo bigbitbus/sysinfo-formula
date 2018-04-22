@@ -1,0 +1,10 @@
+{% set sysinfo = salt['grains.filter_by']({
+    'Debian': {
+    },
+    'RedHat': {
+    },    
+    'common': {
+        'out_dir': '/tmp/outputdata/sysinfo',
+        'files': ['/proc/cpuinfo','/proc/meminfo']
+    }
+}, grain='os_family', merge=salt['pillar.get']('sysinfo:lookup'), default='Debian', base='common')%}
